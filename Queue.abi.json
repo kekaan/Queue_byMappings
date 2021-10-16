@@ -1,0 +1,58 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "pushInQueue",
+			"inputs": [
+				{"name":"newMember","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "exitQueue",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "members",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"members","type":"string[]"}
+			]
+		},
+		{
+			"name": "queue",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"queue","type":"map(uint8,string)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"members","type":"string[]"},
+		{"name":"queue","type":"map(uint8,string)"},
+		{"name":"firstMember","type":"uint8"},
+		{"name":"lastMember","type":"uint8"}
+	]
+}
